@@ -1,14 +1,16 @@
 # Azure APIM Example
 
 
-`module "pizza_toppings" {
+```
+module "pizza_toppings" {
   source          = "../"
   name            = "PizzaToppings"
   create_rg       = false
   rg_name         = "1-092ed5cc-playground-sandbox"
   functionappname = "./toppings.zip"
   api_operations  = local.api_operations
-}`
+}
+```
 
 ![WHAT WE ARE BUILDING!](./arch.jpg "What we are building")
 <!-- BEGIN_TF_DOCS -->
