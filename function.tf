@@ -48,7 +48,7 @@ resource "azurerm_windows_function_app" "example" {
   app_settings = {
     https_only               = true
     FUNCTIONS_WORKER_RUNTIME = "node"
-    # WEBSITE_NODE_DEFAULT_VERSION = "~20"
+    WEBSITE_NODE_DEFAULT_VERSION = "~20"
     WEBSITE_RUN_FROM_PACKAGE  = "0"
     WEBSITE_DISABLE_ZIP_CACHE = "0"
     COSMOS_CONNECTION_STRING  = "${azurerm_cosmosdb_account.pizza_db_acct.connection_strings[0]}"
