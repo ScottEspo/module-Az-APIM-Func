@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "example" {
-  name                     = "${var.name}-${random_string.azurerm_api_management_name.result}"
+  name                     = local.storage_acct_name_short
   resource_group_name      = local.resource_group_name
   location                 = local.resource_group_location
   account_tier             = "Standard"

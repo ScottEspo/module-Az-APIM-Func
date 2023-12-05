@@ -8,11 +8,11 @@ locals {
       description  = "Get Toppings"
     },
     "init-toppings" = {
-      operation_id = "get-toppings"
-      display_name = "Get Toppings"
+      operation_id = "initiate-toppings"
+      display_name = "Initiate Toppings"
       method       = "GET"
-      url_template = "/get-toppings"
-      description  = "Get Toppings"
+      url_template = "/toppings-init"
+      description  = "Initiate Toppings"
     }
   }
 }
